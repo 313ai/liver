@@ -1,0 +1,35 @@
+Hi Fred, 
+
+will you be available tomorrow by chance (starting at 9:00am) to have a talk? I have few slides I want to show you. I think your ideas are really a good start.
+
+To be more specific,  what we did with the omic data is 
+A) we transformed (after normalisation) the very high dimensional omic matrices into lower dimension space using deep-learning
+B) we identified which new features were linked to survival using survival analysis approaches
+C) post-processing (cluster...classification....)
+
+So, to sum-up, the main step for the image project according to my opinion is to know if any kind of image features can be linked to survival.
+A survival data is a time (like 180 days of following) and an event, used classically as a boolean (1 the patient died,or  0 he is still alive after 180 days).
+
+Survival models such as Cox-PH will fit, according to a training dataset with survival data and cofactors (such as age, the presence of metastasis...) a survival curve telling you the probability to die after X days (at day 0: 100% probability of survival)
+
+here, what I will do is I will try the power of new DL image algorithms (convolutional autoencoders,.image-net....,   there are so many) to transform the image data first into new spaces and see if, amongst the new features, there are some significantly linked to survival. 
+
+
+We can talk tomorrow or this week
+
+
+also Fred,
+
+if it can help you, you can consult and play with lifelines, a user-friendly python package for processing and create survival models, to help you understand these concepts.
+
+http://lifelines.readthedocs.io/en/latest/
+
+here is also a link toward a paper explaining a little bit more the Cox-PH model:
+
+https://socialsciences.mcmaster.ca/jfox/Books/Companion/appendix/Appendix-Cox-Regression.pdf
+
+and in R you have a great and very fast survival library (and many other on the question):
+
+https://cran.r-project.org/web/packages/survival/survival.pdf
+
+

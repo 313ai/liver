@@ -1,0 +1,16 @@
+ok for the sample name: i.e. TCGA-UB-A7MB-01A-01-TS1 
+the patient ID corresponds to A7MB. 
+Next, 01A should be also considered: 
+    the letter (A, B, C, D....) refers to the ID of the tubes 
+    (one sample can have multiple tubes i.e. multiple prelevements) . 
+    the number refers to the tissue type: 
+        01 for solid primary tumor, 
+        06 for metastasis see here
+
+    
+https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/sample-type-codes
+
+but we need actually to consider only the 01 tubes
+for the model
+so please discard the other samples for now
+
